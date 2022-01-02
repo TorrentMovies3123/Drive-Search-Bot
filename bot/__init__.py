@@ -49,7 +49,7 @@ except KeyError as e:
     LOGGER.error("One or more env variables missing! Exiting now")
     exit(1)
 
-DRIVE_NAME = [MT]
+DRIVE_NAME = ["MT"]
 DRIVE_ID = []
 INDEX_URL = ["https://mttest.movietime23.workers.dev"]
 
