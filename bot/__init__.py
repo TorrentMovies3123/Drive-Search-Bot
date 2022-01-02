@@ -50,20 +50,20 @@ except KeyError as e:
     exit(1)
 
 DRIVE_NAME = ["MT"]
-DRIVE_ID = []
+DRIVE_ID = ["0AEHZDBzm5tOIUk9PVA"]
 INDEX_URL = ["https://mttest.movietime23.workers.dev"]
 
-#if os.path.exists('drive_folder'):
- #   with open('drive_folder', 'r+') as f:
-  #      lines = f.readlines()
-   #     for line in lines:
-    #        temp = line.strip().split()
-     #       DRIVE_NAME.append(temp[0].replace("_", " "))
-      #      DRIVE_ID.append(temp[1])
-       #     try:
-        #        INDEX_URL.append(temp[2])
-         #   except IndexError as e:
-          #      INDEX_URL.append(None)
+if os.path.exists('drive_folder'):
+    with open('drive_folder', 'r+') as f:
+        lines = f.readlines()
+        for line in lines:
+            temp = line.strip().split()
+            DRIVE_NAME.append(temp[0].replace("_", " "))
+            DRIVE_ID.append(temp[1])
+            try:
+                INDEX_URL.append(temp[2])
+            except IndexError as e:
+                INDEX_URL.append(None)
 
 if DRIVE_ID :
     pass
