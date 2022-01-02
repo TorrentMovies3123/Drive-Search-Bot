@@ -50,7 +50,7 @@ except KeyError as e:
     exit(1)
 
 DRIVE_NAME = [MT]
-DRIVE_ID = [0AEHZDBzm5tOIUk9PVA]
+DRIVE_ID = []
 INDEX_URL = [https://mttest.movietime23.workers.dev]
 
 #if os.path.exists('drive_folder'):
