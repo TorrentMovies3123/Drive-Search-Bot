@@ -51,7 +51,7 @@ except KeyError as e:
 
 DRIVE_NAME = [MT]
 DRIVE_ID = []
-INDEX_URL = [https://mttest.movietime23.workers.dev]
+INDEX_URL = ["https://mttest.movietime23.workers.dev"]
 
 #if os.path.exists('drive_folder'):
  #   with open('drive_folder', 'r+') as f:
