@@ -45,7 +45,7 @@ class GoogleDriveHelper:
         # Get credentials
         credentials = None
         if os.path.exists(self.__G_DRIVE_TOKEN_FILE):
-            with gzip.open(self.__G_DRIVE_TOKEN_FILE, 'rb') as f:
+            with open(self.__G_DRIVE_TOKEN_FILE, 'rb') as f:
                 credentials = pickle.load(f)
         if credentials is None or not credentials.valid:
             if credentials and credentials.expired and credentials.refresh_token:
